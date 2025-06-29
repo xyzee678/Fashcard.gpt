@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Flashcard App</h1>
+    <nav>
+      <button id="createDeckBtn">New Deck</button>
+      <button id="exportBtn">Export Data</button>
+      <input type="file" id="importFile" style="display:none;" accept=".json"/>
+      <button id="importBtn">Import Data</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside id="deckList"></aside>
+    <section id="cardManager">
+      <h2 id="deckTitle">No Deck Selected</h2>
+      <div id="cardFormContainer">
+        <input type="text" id="frontText" placeholder="Front text"/>
+        <input type="file" id="frontImage" accept="image/*"/>
+        <input type="text" id="backText" placeholder="Back text"/>
+        <input type="file" id="backImage" accept="image/*"/>
+        <button id="addCardBtn">Add Card</button>
+      </div>
+      <div id="cardsContainer"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
